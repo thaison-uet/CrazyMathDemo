@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+    <TextView
+        android:id="@+id/tv_gameover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Game Over"
+        android:textColor="@color/mainColor"
+        android:textSize="80dp" />
+
+    <TextView
+        android:id="@+id/tv_yourscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_gameover"
+        android:layout_centerHorizontal="true"
+        android:text="Your score: 50"
+        android:textColor="@color/mainColor"
+        android:textSize="30dp" />
+
+    <ImageView
+        android:id="@+id/iv_replay"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/tv_yourscore"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_replaybutton" />
+</RelativeLayout>
